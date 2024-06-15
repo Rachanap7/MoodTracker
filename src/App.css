@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+.user-mood{
+  width: 50vh;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.user-input{
   display: flex;
-  flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+    gap: 1rem;
+}
+.title{
+  font-family: cursive;
+  font-weight: bold;
+  font-size: larger;
+}
+body{
+  background-image: url("D:\workSpace\myLearnings\MoodTracker\moodtracker\public\BGImage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.flex-box{
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+.mood {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 100%;
   color: white;
+  font-weight: bold;
+  border-radius: 50%;
 }
 
-.App-link {
-  color: #61dafb;
+.mood.happy {
+  background-color: yellow;
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mood.sad {
+  background-color: blue;
+}
+
+.mood.neutral {
+  background-color: green;
+}
+.mood.angry {
+  background-color: red
+}
+
+.mood-entry {
+  margin-top: 20px;
+}
+
+.mood-entry select, .mood-entry button {
+  margin: 5px;
 }
